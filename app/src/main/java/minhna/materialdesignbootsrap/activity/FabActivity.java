@@ -12,6 +12,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import me.henrytao.mdcore.widgets.FabSheetWindow;
 import minhna.materialdesignbootsrap.R;
+import minhna.materialdesignbootsrap.model.Status;
+import minhna.materialdesignbootsrap.model.TypeDefClass;
 
 public class FabActivity extends BaseActivity {
 
@@ -35,5 +37,11 @@ public class FabActivity extends BaseActivity {
     View sheet = getLayoutInflater().inflate(R.layout.custom_fab_sheet_window, null, false);
     FabSheetWindow fabSheetWindow = new FabSheetWindow.Builder(vFabPopupWindow, sheet).build();
     fabSheetWindow.show();
+  }
+
+  public void showMainActivity(View view) {
+    TypeDefClass typeDefClass = new TypeDefClass();
+    typeDefClass.setStatus(Status.UNNORMAL);
+    MainActivity.start(this,typeDefClass.getStatus());
   }
 }

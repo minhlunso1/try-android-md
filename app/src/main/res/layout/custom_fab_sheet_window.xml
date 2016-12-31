@@ -22,6 +22,8 @@
             android:paddingLeft="@dimen/mdLayoutSpacing"
             android:paddingRight="@dimen/mdLayoutSpacing_lg"
             android:text="Create group chat"
+            android:textColor="#000"
+            android:onClick="showMainActivity"
             style="@style/MdText.Subhead1.SingleLine" />
 
         <TextView
@@ -32,6 +34,7 @@
             android:gravity="center_vertical"
             android:paddingLeft="@dimen/mdLayoutSpacing"
             android:paddingRight="@dimen/mdLayoutSpacing_lg"
+            android:textColor="#000"
             android:text="Create 1-1"
             style="@style/MdText.Subhead1.SingleLine" />
     </LinearLayout>
